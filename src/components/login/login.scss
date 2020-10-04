@@ -1,0 +1,18 @@
+.tabs-container {
+  width: 90vw;
+  background-color: white;
+  border-radius: 5px;
+}
+.step-heading {
+  display: flex;
+  align-items: center;
+  height: 9vh;
+  & > h2 {
+    padding: 0 0 1rem 0.7rem;
+    color: white;
+  }
+}
+
+.login-form-container {
+  padding: 15px;
+}

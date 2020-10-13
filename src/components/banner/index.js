@@ -1,8 +1,8 @@
 import React from 'react'
-import banner from '../../assets/banner.jpg'
+import banner from '@app/assets/images/banner.jpg'
 
-import playCard from "../../assets/gpayCard.png";
-import cash2 from "../../assets/cash2.png";
+import playCard from "@app/assets/images/gpayCard.png";
+import cash2 from "@app/assets/images/cash2.png";
 import Flipper from '../flipper'
 import './banner.scss'
 

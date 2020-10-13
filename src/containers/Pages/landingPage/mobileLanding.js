@@ -1,13 +1,12 @@
 import React from "react";
-import "./App.css";
-import Flipper from "./components/flipper";
-import StepsCard from "./components/stepsCard";
-import Drawer from "./components/drawer";
-import Header from "./components/header";
-import Login from "@app/components/login";
-import Banner from "./components/banner";
 
-function App() {
+import StepsCard from "@app/components/stepsCard";
+import Drawer from "@app/components/drawer";
+import Header from "@app/components/header";
+import Login from "@app/components/login";
+import Banner from "@app/components/banner";
+
+function MobileLanding() {
   return (
     <div className="app">
       <Header />
@@ -23,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default MobileLanding;

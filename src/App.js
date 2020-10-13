@@ -1,26 +1,18 @@
 import React from "react";
-import "./App.css";
-import Flipper from "./components/flipper";
-import StepsCard from "./components/stepsCard";
-import Drawer from "./components/drawer";
-import Header from "./components/header";
-import Login from "@app/components/login"
-import Banner from "./components/banner";
+import { Provider } from "react-redux";
+import GlobalStyles from "@app/assets/styles/globalStyle";
+import store from "./redux/store";
+import Boot from "./redux/boot";
+import Routes from "./router";
 
-function App() {
-  return (
-    <div className="app">
-      <Header />
-      <Banner />
-      <Drawer>
-        <Login />
-      </Drawer>
-      <StepsCard />
-      <StepsCard />
-      <StepsCard />
-      <StepsCard />
-    </div>
-  );
-}
+const App = () => (
+  <Provider store={store}>
+    <GlobalStyles />
+    <Routes />
+  </Provider>
+);
+Boot()
+  .then(() => App())
+  .catch((error) => console.error(error));
 
 export default App;
